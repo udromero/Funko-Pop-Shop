@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Funko Pop Shop</string>
+
+    <!--Button Strings-->
+    <string name="loginButtonText">Login</string>
+    <string name="createAccountButtonText">Create Account</string>
+
+    <!--Basic Strings-->
+    <string name="login">Login</string>
+    <string name="createAccount">Create Account</string>
+    <string name="welcome">Welcome, %1$s</string>
+    <string name="admin">Admin</string>
+    <string name="logout">Logout</string>
+    <string name="adminDisplay">Are you an admin?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="loginLoginHint">Login</string>
+    <string name="loginUsernameHint">Enter Username</string>
+    <string name="loginPasswordHint">Enter Password</string>
+    <string name="loginAdminKeyHint">Enter Admin Key</string>
+
+    <!--Admin Dashboard Strings-->
+    <string name="adminDashDisplay">Admin Dashboard</string>
+    <string name="adminDashAddItem">Add Item</string>
+    <string name="adminDashModifyItem">Modify Item</string>
+    <string name="adminDashDeleteItem">Delete Item</string>
+    <string name="adminDashViewUsers">View Users</string>
+    <string name="adminDashBackButtonText">Back</string>
+
+    <!--Admin Item Operation Strings-->
+    <string name="itemOpDisplay">%1$s Item</string>
+    <string name="itemOpItemId">Enter Item ID</string>
+    <string name="addItemPictureLink">Enter Link to Picture</string>
+    <string name="addItemName">Enter Item Name</string>
+    <string name="addItemPrice">Enter Item Price ($)</string>
+    <string name="addItemDescription">Enter Item Description</string>
+    <string name="itemOpSave">Save</string>
+    <string name="itemOpContinueButtonText">Continue</string>
+    <string name="itemOpBackButtonText">Back</string>
+
+    <!--Landing Page String-->
+    <string name="landingPageShopTitle">Funko Pop Shop</string>
+
+    <!--Item Page Strings-->
+    <string name="itemPageItemNameString">%1$s</string>
+    <string name="itemPageItemPrice">Price: %1$s</string>
+    <string name="itemPageDescription">%1$s</string>
+    <string name="itemPageCartButtonText">%1$s to Cart</string>
+    <string name="itemPageItemIdTextDisplay">Item ID: %1$s</string>
+
+    <!--Cart Page Strings-->
+    <string name="userCartPageTitle">Shopping Cart</string>
+    <string name="userCartPageItemsText">Your Items:</string>
+    <string name="emptyStringToBeFilled">%1$s</string>
+    <string name="userCartPageItemPriceAmountText">$%1$s</string>
+    <string name="userCartPageItemPriceTotalText">Total: $%1$s</string>
+    <string name="userCartPageContinueToPaymentButtonText">Go to Payment</string>
+
+    <!--All User Operations Page Strings-->
+    <string name="allUserOpsDisplayText">All Users</string>
+    <string name="allUsersOpsUserIdToDeleteText">Enter User ID to Delete</string>
+    <string name="allUsersOpsHintText">Enter User ID</string>
+    <string name="allUsersOpsDeleteButtonText">Delete</string>
+
+    <string-array name="allUsersOpsAllUsers">
+        <item>ID</item>
+        <item>Username</item>
+        <item>Admin</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingPage">
+
+    <TextView
+        android:id="@+id/landingShopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text="@string/landingPageShopTitle"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/landingLandingDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text="@string/welcome"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/landingShopTitle" />
+
+
+    <Button
+        android:id="@+id/landingAdminButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/admin"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landingLandingDisplay" />
+
+    <Button
+        android:id="@+id/landingLogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/logout"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/landingAdminButton"
+        app:layout_constraintTop_toBottomOf="@+id/landingLandingDisplay" />
+
+    <ImageView
+        android:id="@+id/landingItemImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/landingAdminButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landingLandingDisplay"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/landingItemImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/landingAdminButton"
+        app:layout_constraintTop_toBottomOf="@+id/landingLandingDisplay"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/landingItemImage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/landingAdminButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landingItemImage1"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/landingItemImage4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/landingAdminButton"
+        app:layout_constraintTop_toBottomOf="@+id/landingItemImage2"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/landingNextButton"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="Next"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/landingLogoutButton"
+        app:layout_constraintTop_toBottomOf="@+id/landingLogoutButton" />
+
+    <Button
+        android:id="@+id/landingPreviousButton"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="Prev"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/landingNextButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/landingLogoutButton"
+        app:layout_constraintTop_toBottomOf="@+id/landingLogoutButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

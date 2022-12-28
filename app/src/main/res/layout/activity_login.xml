@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/loginLoginDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text="@string/loginLoginHint"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/loginUsernameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="@string/loginUsernameHint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginLoginDisplay"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/loginPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="@string/loginPasswordHint"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginUsernameEditText"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/loginAdminDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text="@string/adminDisplay"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/loginPasswordEditText" />
+
+    <EditText
+        android:id="@+id/loginAdminKeyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="@string/loginAdminKeyHint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginAdminDisplay"
+        android:autofillHints="" />
+
+    <Button
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:id="@+id/loginLoginButton"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/loginButtonText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginAdminKeyText" />
+
+    <Button
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:id="@+id/loginCreateAccountButton"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/createAccountButtonText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginAdminKeyText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

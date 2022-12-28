@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserCartPage">
+
+    <TextView
+        android:id="@+id/userCartPageTitleDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/userCartPageTitle"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/userCartPageItemsTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/userCartPageItemsText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userCartPageTitleDisplay" />
+
+    <LinearLayout
+        android:id="@+id/UserCartItemList"
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/userCartPageItemsTextDisplay">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userCartRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:maxHeight="400dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/allUsersOpsDisplay">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+<!--    <TableLayout-->
+<!--        android:id="@+id/userCartItemTable"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="260dp"-->
+<!--        android:isScrollContainer="true"-->
+<!--        android:padding="10dip"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/userCartPageItemsTextDisplay">-->
+
+<!--        <TableRow-->
+<!--            android:id="@+id/userCartTableRow1"-->
+<!--            android:layout_width="80dip">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/userCartItemImage1"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:maxWidth="250dp"-->
+<!--                android:maxHeight="250dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                app:srcCompat="@drawable/ic_launcher_foreground" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/userCartItemName1"-->
+<!--                android:padding="15dp"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/emptyStringToBeFilled"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/userCartItemPrice1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:padding="0dp"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/userCartPageItemPriceAmountText" />-->
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:id="@+id/userCartTableRow2"-->
+<!--            android:layout_width="80dip">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/userCartItemImage2"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:maxWidth="250dp"-->
+<!--                android:maxHeight="250dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                app:srcCompat="@drawable/ic_launcher_foreground" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/userCartItemName2"-->
+<!--                android:padding="15dp"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/emptyStringToBeFilled"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/userCartItemPrice2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:padding="0dp"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/userCartPageItemPriceAmountText" />-->
+
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:id="@+id/userCartTableRow3"-->
+<!--            android:layout_width="80dip">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/userCartItemImage3"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:maxWidth="250dp"-->
+<!--                android:maxHeight="250dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                app:srcCompat="@drawable/ic_launcher_foreground" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/userCartItemName3"-->
+<!--                android:padding="15dp"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/emptyStringToBeFilled"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/userCartItemPrice3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:padding="0dp"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/userCartPageItemPriceAmountText" />-->
+<!--        </TableRow>-->
+
+<!--    </TableLayout>-->
+
+    <TextView
+        android:id="@+id/userCartPagePriceTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userCartPageItemPriceTotalText"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/UserCartItemList"
+        app:layout_constraintTop_toBottomOf="@+id/UserCartItemList" />
+
+    <Button
+        android:id="@+id/userCartPageBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/itemOpBackButtonText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/userCartPageItemsTextDisplay"
+        app:layout_constraintStart_toStartOf="@+id/UserCartItemList"
+        app:layout_constraintTop_toBottomOf="@+id/userCartPagePriceTotal" />
+
+    <Button
+        android:id="@+id/userCartPageGoToPaymentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/userCartPageContinueToPaymentButtonText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userCartPageBackButton"
+        app:layout_constraintTop_toBottomOf="@+id/userCartPagePriceTotal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

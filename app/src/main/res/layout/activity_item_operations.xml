@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ItemOperations">
+
+    <TextView
+        android:id="@+id/itemOpDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text="@string/itemOpDisplay"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/itemOpItemId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:hint="@string/itemOpItemId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemOpDisplay"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/itemOpContinueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/itemOpContinueButtonText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemOpItemId" />
+
+    <EditText
+        android:id="@+id/itemOpPictureLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical"
+        android:inputType="text|textMultiLine"
+        android:gravity="center"
+        android:hint="@string/addItemPictureLink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemOpDisplay"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/itemOpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical"
+        android:inputType="text|textMultiLine"
+        android:gravity="center"
+        android:hint="@string/addItemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemOpPictureLink"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/itemOpPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical"
+        android:inputType="text"
+        android:gravity="center"
+        android:hint="@string/addItemPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemOpName"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/itemOpDescriptionBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical"
+        android:inputType="text|textMultiLine"
+        android:gravity="center"
+        android:hint="@string/addItemDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemOpPrice"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/itemOpSaveButton"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/itemOpSave"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemOpDescriptionBox" />
+
+    <Button
+        android:id="@+id/itemOpBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/itemOpBackButtonText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemOpSaveButton" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDashboard">
+
+    <Button
+        android:id="@+id/adminDashBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/adminDashBackButtonText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminDashDeleteItem" />
+
+    <TextView
+        android:id="@+id/adminDashDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text="@string/adminDashDisplay"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/adminDashViewUsers"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/adminDashViewUsers"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminDashDisplay" />
+
+    <Button
+        android:id="@+id/adminDashAddItem"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/adminDashAddItem"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminDashViewUsers" />
+
+    <Button
+        android:id="@+id/adminDashModifyItem"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/adminDashModifyItem"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminDashAddItem" />
+
+    <Button
+        android:id="@+id/adminDashDeleteItem"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/adminDashDeleteItem"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminDashModifyItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

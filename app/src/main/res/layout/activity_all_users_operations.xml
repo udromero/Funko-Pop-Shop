@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllUsersOperations">
+
+    <TextView
+        android:id="@+id/allUsersOpsDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text="@string/allUserOpsDisplayText"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/allUsersOpsLinearLayout"
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/allUsersOpsDisplay">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allUsersOpsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:maxHeight="400dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/allUsersOpsDisplay">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/allUsersOpsUserToDeletePromptDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:hint="@string/allUsersOpsUserIdToDeleteText"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/allUsersOpsLinearLayout" />
+
+    <EditText
+        android:id="@+id/allUsersOpsUserIdField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:hint="@string/allUsersOpsHintText"
+        android:inputType="numberDecimal"
+        android:scrollbars="vertical"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/allUsersOpsUserToDeletePromptDisplay"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/allUsersOpsUserToDeletePromptDisplay" />
+
+    <Button
+        android:id="@+id/allUsersOpsDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/allUsersOpsDeleteButtonText"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toEndOf="@+id/allUsersOpsUserIdField"
+        app:layout_constraintTop_toBottomOf="@+id/allUsersOpsUserToDeletePromptDisplay" />
+
+    <Button
+        android:id="@+id/allUsersOpsBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/itemOpBackButtonText"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allUsersOpsUserToDeletePromptDisplay" />
+</androidx.constraintlayout.widget.ConstraintLayout>
